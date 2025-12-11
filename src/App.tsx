@@ -7,24 +7,22 @@ import Bureau from "./pages/Bureau";
 import Contact from "./pages/Contact";
 import Corporate from "./pages/Corporate";
 
-function App() {
+const App = () => {
   return (
     <Router basename="/csf14th">
-      <div>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/concept" element={<Concept />} />
-            <Route path="/bureau" element={<Bureau />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/corporate" element={<Corporate />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/concept" element={<Concept />} />
+          <Route path="/bureau" element={<Bureau />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/corporate" element={<Corporate />} />
+        </Routes>
+      </main>
+      <Footer />
     </Router>
   );
-}
+};
 
 export default App;

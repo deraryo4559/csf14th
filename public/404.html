@@ -16,7 +16,7 @@
       if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
         var redirectPath = '/csf14th/' + pathSegments.slice(repoIndex + 1).join('/');
         window.location.replace(redirectPath);
-      } else {
+      } else if (repoIndex === -1 || pathSegments.length === repoIndex + 1) {
         // ルートパスの場合
         window.location.replace('/csf14th/');
       }
@@ -27,7 +27,9 @@
     <script>
       // フォールバック: リダイレクトが失敗した場合
       setTimeout(function() {
-        window.location.replace('/csf14th/');
+        if (window.location.pathname !== '/csf14th/') {
+          window.location.replace('/csf14th/');
+        }
       }, 100);
     </script>
   </body>

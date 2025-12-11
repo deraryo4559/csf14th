@@ -18,7 +18,18 @@ const App = () => {
   // basenameを動的に決定
   // GitHub Pagesでは /csf14th/ がbaseパス
   // 開発環境では / がbaseパス
-  const basename = baseUrl.replace(/\/$/, ''); // 末尾の / を削除
+  // 末尾の / を削除してbasenameを設定
+  let basename = baseUrl.replace(/\/$/, '');
+  
+  // 現在のパスが /csf14th で始まっている場合、basenameを /csf14th に設定
+  // そうでない場合（開発環境など）、basenameを空文字列に設定
+  if (currentPath.startsWith('/csf14th')) {
+    basename = '/csf14th';
+  } else if (baseUrl === '/') {
+    basename = '';
+  }
+
+  console.log("Basename:", basename);
 
   return (
     <Router basename={basename}>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSF 14th</title>
+    <script>
+      // GitHub Pages用のSPAリダイレクト
+      var path = window.location.pathname;
+      var pathSegments = path.split('/').filter(function(segment) {
+        return segment !== '';
+      });
+      
+      // /csf14th/ の後のパスを取得
+      var repoIndex = pathSegments.indexOf('csf14th');
+      if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
+        var redirectPath = '/csf14th/' + pathSegments.slice(repoIndex + 1).join('/');
+        window.location.replace(redirectPath);
+      } else {
+        // ルートパスの場合
+        window.location.replace('/csf14th/');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // フォールバック: リダイレクトが失敗した場合
+      setTimeout(function() {
+        window.location.replace('/csf14th/');
+      }, 100);
+    </script>
+  </body>
+</html>
+

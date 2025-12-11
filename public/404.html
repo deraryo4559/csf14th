@@ -3,36 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSF 14th - Redirecting...</title>
+    <title>CSF 14th</title>
     <script>
       // GitHub Pages用のSPAリダイレクト
-      (function () {
-        var path = window.location.pathname;
-
-        // /csf14th/ で始まっていない場合はリダイレクト
-        if (!path.startsWith("/csf14th/")) {
-          if (path === "/" || path === "/csf14th" || path === "/csf14th/") {
-            window.location.replace("/csf14th/");
-          } else {
-            // パスセグメントを取得
-            var pathSegments = path.split("/").filter(function (segment) {
-              return segment !== "";
-            });
-
-            var repoIndex = pathSegments.indexOf("csf14th");
-            if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
-              var redirectPath =
-                "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
-              window.location.replace(redirectPath);
-            } else {
-              window.location.replace("/csf14th/");
-            }
+      // 404エラーが発生した場合、/csf14th/ にリダイレクト
+      var path = window.location.pathname;
+      if (!path.startsWith("/csf14th/")) {
+        var redirectPath = "/csf14th/";
+        if (path !== "/" && path !== "/csf14th" && path !== "/csf14th/") {
+          // パスセグメントを取得してリダイレクト
+          var pathSegments = path.split("/").filter(function (segment) {
+            return segment !== "";
+          });
+          var repoIndex = pathSegments.indexOf("csf14th");
+          if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
+            redirectPath = "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
           }
-        } else {
-          // 既に /csf14th/ で始まっている場合はそのまま（index.htmlが自動的に読み込まれる）
-          // 何もしない（現在のページをそのまま表示）
         }
-      })();
+        window.location.replace(redirectPath);
+      }
     </script>
   </head>
   <body>

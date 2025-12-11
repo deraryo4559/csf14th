@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { getAssetPath } from "../utils/assetPath";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Header = () => {
         <div
           className="logo-img"
           style={{
-            backgroundImage: "url('/assets/img/common/CSF_Logo_header4.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/common/CSF_Logo_header4.png")}')`,
           }}
         />
         <h2 className="logo-title">学生団体廃校文化祭実行委員会</h2>

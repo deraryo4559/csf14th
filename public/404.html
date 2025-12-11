@@ -7,18 +7,19 @@
     <script>
       // GitHub Pages用のSPAリダイレクト
       var path = window.location.pathname;
-      var pathSegments = path.split('/').filter(function(segment) {
-        return segment !== '';
+      var pathSegments = path.split("/").filter(function (segment) {
+        return segment !== "";
       });
-      
+
       // /csf14th/ の後のパスを取得
-      var repoIndex = pathSegments.indexOf('csf14th');
+      var repoIndex = pathSegments.indexOf("csf14th");
       if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
-        var redirectPath = '/csf14th/' + pathSegments.slice(repoIndex + 1).join('/');
+        var redirectPath =
+          "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
         window.location.replace(redirectPath);
       } else if (repoIndex === -1 || pathSegments.length === repoIndex + 1) {
         // ルートパスの場合
-        window.location.replace('/csf14th/');
+        window.location.replace("/csf14th/");
       }
     </script>
   </head>
@@ -26,12 +27,11 @@
     <div id="root"></div>
     <script>
       // フォールバック: リダイレクトが失敗した場合
-      setTimeout(function() {
-        if (window.location.pathname !== '/csf14th/') {
-          window.location.replace('/csf14th/');
+      setTimeout(function () {
+        if (window.location.pathname !== "/csf14th/") {
+          window.location.replace("/csf14th/");
         }
       }, 100);
     </script>
   </body>
 </html>
-

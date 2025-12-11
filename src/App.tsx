@@ -10,17 +10,57 @@ import Corporate from "./pages/Corporate";
 const App = () => {
   return (
     <Router basename="/csf14th">
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/concept" element={<Concept />} />
-          <Route path="/bureau" element={<Bureau />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/corporate" element={<Corporate />} />
-        </Routes>
-      </main>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/concept"
+          element={
+            <>
+              <Header />
+              <main>
+                <Concept />
+              </main>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/bureau"
+          element={
+            <>
+              <Header />
+              <main>
+                <Bureau />
+              </main>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Header />
+              <main>
+                <Contact />
+              </main>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/corporate"
+          element={
+            <>
+              <Header />
+              <main>
+                <Corporate />
+              </main>
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
     </Router>
   );
 };

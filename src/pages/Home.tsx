@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { getAssetPath } from "../utils/assetPath";
 
 const Home = () => {
   return (
-    <div>
+    <>
+      <Header />
+      <main>
+        <div>
       {/* KV Section */}
       <section className="kv">
         <div className="kv_inner">
@@ -28,7 +34,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="/assets/img/common/Instagram_logo.png"
+                      src={getAssetPath("/assets/img/common/Instagram_logo.png")}
                       alt="Instagram"
                     />
                   </a>
@@ -40,7 +46,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="/assets/img/common/x_logo.png"
+                      src={getAssetPath("/assets/img/common/x_logo.png")}
                       alt="X (Twitter)"
                     />
                   </a>
@@ -100,7 +106,7 @@ const Home = () => {
         <div
           className="concept-rect-right-top"
           style={{
-            backgroundImage: "url('/assets/img/concept/hatena3.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/hatena3.png")}')`,
           }}
         />
       </section>
@@ -173,19 +179,19 @@ const Home = () => {
           <div
             className="bureau-rect-left-top"
             style={{
-              backgroundImage: "url('/assets/img/concept/grandpa.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/concept/grandpa.png")}')`,
             }}
           />
           <div
             className="bureau-rect-left-bottom"
             style={{
-              backgroundImage: "url('/assets/img/concept/instrument.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/concept/instrument.png")}')`,
             }}
           />
           <div
             className="bureau-rect-right-bottom"
             style={{
-              backgroundImage: "url('/assets/img/concept/ghost.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/concept/ghost.png")}')`,
             }}
           />
         </div>
@@ -282,7 +288,7 @@ const Home = () => {
           <div
             className="funding-img"
             style={{
-              backgroundImage: "url('/assets/img/common/group2.jpg')",
+              backgroundImage: `url('${getAssetPath("/assets/img/common/group2.jpg")}')`,
             }}
           />
           <div className="funding-content">
@@ -309,7 +315,10 @@ const Home = () => {
           </a>
         </div>
       </section>
-    </div>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
 

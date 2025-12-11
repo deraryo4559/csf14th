@@ -1,0 +1,226 @@
+/* レスポンシブデザインの追加スタイル */
+
+/* 画像のレスポンシブ対応 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* スマートフォン対応（480px以下） */
+@media only screen and (max-width: 480px) {
+  /* KVセクション */
+  .kv {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .kv_title span {
+    font-size: 20vw;
+  }
+
+  .kv .kv_subtitle {
+    font-size: 1.2rem;
+    top: 70%;
+  }
+
+  .kv_subtitle:before,
+  .kv_subtitle:after {
+    display: none;
+  }
+
+  .kv_inner {
+    padding: 2rem 1rem;
+  }
+
+  /* コンセプトセクション */
+  .section_headerWrapper h2 {
+    font-size: 2rem;
+  }
+
+  .section_headerWrapper p {
+    font-size: 1.5rem;
+  }
+
+  .sc_btn {
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    right: 10%;
+    bottom: -20%;
+  }
+
+  /* 局セクション */
+  .bureau-single {
+    width: 90%;
+    height: auto;
+    min-height: 200px;
+    margin: 10px auto;
+  }
+
+  .bureau-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .bureau-body p {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  /* ニュースセクション */
+  .news-header {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+  }
+
+  .topic-header h2,
+  .event-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .card time,
+  .card .card_body a {
+    font-size: 1rem;
+  }
+
+  .news_btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* ファンディングセクション */
+  .funding-header {
+    font-size: 1.2rem;
+  }
+
+  .bar-header {
+    font-size: 0.9rem;
+  }
+
+  .bar-footer {
+    font-size: 0.9rem;
+  }
+
+  .funding-link {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  /* フッター */
+  .footer-logo-name {
+    font-size: 0.8rem;
+  }
+
+  .section-access-header {
+    font-size: 1.5rem;
+  }
+
+  .access-addres {
+    font-size: 0.9rem;
+  }
+}
+
+/* タブレット対応（481px - 834px） */
+@media only screen and (min-width: 481px) and (max-width: 834px) {
+  /* KVセクション */
+  .kv_title span {
+    font-size: 25vw;
+  }
+
+  .kv .kv_subtitle {
+    font-size: 1.8rem;
+  }
+
+  /* コンセプトセクション */
+  .section_headerWrapper h2 {
+    font-size: 3rem;
+  }
+
+  .section_headerWrapper p {
+    font-size: 2rem;
+  }
+
+  /* 局セクション */
+  .bureau-single {
+    width: 45%;
+    margin: 1%;
+  }
+
+  /* ニュースセクション */
+  .news-header {
+    font-size: 2rem;
+  }
+
+  .topic-header h2,
+  .event-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* 大きなタブレット・小さなデスクトップ（835px - 1024px） */
+@media only screen and (min-width: 835px) and (max-width: 1024px) {
+  .section_inner {
+    padding: 0 20px;
+  }
+
+  .bureau-single {
+    width: 48%;
+  }
+}
+
+/* コンテナの最大幅設定 */
+.section_inner,
+.section_bureau-inner,
+.section_news-inner,
+.section_funding-innner {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* テキストの折り返し */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* フォームのレスポンシブ対応 */
+@media only screen and (max-width: 480px) {
+  .c-form__item {
+    flex-direction: column;
+  }
+
+  .c-form__label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .c-form__input {
+    width: 100%;
+  }
+
+  .c-form__radio-group {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* iframeのレスポンシブ対応 */
+iframe {
+  max-width: 100%;
+}
+
+#map iframe {
+  width: 100% !important;
+  height: auto;
+  min-height: 300px;
+}
+
+@media only screen and (max-width: 480px) {
+  #map iframe {
+    min-height: 250px;
+  }
+}

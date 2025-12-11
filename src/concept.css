@@ -1,0 +1,477 @@
+#concept1 {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.concept1-inner {
+  height: 80%;
+  width: 75%;
+}
+
+.concept1-header {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.concept1-header h2 {
+  font-family: "makinas";
+  font-size: 4.5rem;
+  color: #3a3a3a;
+  text-shadow: 4px 4px 8px #5a5a5a;
+}
+
+.concept1-content p {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+.concept1-content .concept_blue {
+  font-size: 3rem;
+}
+
+.concept1-rect-left-bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 400px;
+  height: 245px;
+  background-size: cover;
+}
+
+.concept1-rect-right-top {
+  position: absolute;
+  top: 0%;
+  right: 12.5%;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.concept1-rect-right-bottom {
+  position: absolute;
+  bottom: -5%;
+  right: 0%;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+/*スマホ・iPadAir対応 */
+@media screen and (max-width: 834px) {
+  #concept1 {
+    height: 75vh;
+  }
+
+  .concept1-inner {
+    height: 80%;
+    width: 90%;
+  }
+
+  .concept1-header h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #5a5a5a;
+  }
+
+  .concept1-content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+  }
+
+  .concept1-content .concept_blue {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .concept1-content br {
+    display: none;
+  }
+
+  .concept1-rect-left-bottom {
+    position: initial;
+    width: 300px;
+  }
+
+  .concept1-rect-left-bottom::before {
+    content: "";
+    display: block;
+    padding-top: 65%;
+  }
+
+  .concept1-rect-right-top {
+    display: none;
+  }
+
+  .concept1-rect-right-bottom {
+    display: none;
+  }
+}
+
+#concept2 {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.concept2-inner {
+  height: 100%;
+  width: 70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.concept2-header {
+  margin-top: 2.5%;
+  text-align: center;
+  margin-bottom: 2.5vh;
+}
+
+.concept2-header h2 {
+  font-family: "makinas";
+  font-size: 4.5rem;
+  color: #3a3a3a;
+  text-shadow: 4px 4px 8px #5a5a5a;
+}
+
+.concept2-content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #3a3a3a;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.concept2-content .concept_blue {
+  color: blue;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.concept2-rect-left-bottom {
+  position: absolute;
+  bottom: -2%;
+  left: 8%;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  transform: rotate(-60deg);
+}
+
+.concept2-rect-right-bottom {
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+/*スマホ・iPadAir対応 */
+@media screen and (max-width: 834px) {
+  #concept2 {
+    margin-top: 40px;
+    height: 85vh;
+  }
+
+  .concept2-inner {
+    height: auto;
+    margin-bottom: 5%;
+    width: 90%;
+    background-size: 0%;
+    background-color: #12c2b0;
+    border: dashed #2a2a2a;
+  }
+
+  .concept2-header {
+    margin-top: 2.5%;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .concept2-header h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #5a5a5a;
+  }
+
+  .concept2-content {
+    margin-bottom: 20px;
+  }
+
+  .concept2-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+  }
+
+  .concept2-content .concept_blue {
+    font-size: 1.2rem;
+    color: blue;
+  }
+
+  .concept2-rect-left-bottom {
+    display: none;
+  }
+
+  .concept2-rect-right-bottom {
+    position: initial;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#concept3 {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.concept3-inner {
+  height: 85%;
+  width: 75%;
+}
+
+.concept3-header {
+  text-align: center;
+}
+
+.concept3-header h2 {
+  font-family: "makinas";
+  font-size: 4.5rem;
+  color: #3a3a3a;
+  text-shadow: 4px 4px 8px #5a5a5a;
+}
+
+.concept3-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.concept3-img {
+  height: 95%;
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.concept3-sentence {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.concept3-sentence p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #2a2a2a;
+}
+
+.concept3-sentence .concept_blue {
+  color: blue;
+}
+
+.concept3-sentence h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #2a2a2a;
+  font-family: "makinas";
+  margin-top: 5%;
+}
+
+.concept3-rect-left-bottom {
+  position: absolute;
+  bottom: -30%;
+  left: 1%;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.concept3-rect-right-bottom {
+  position: absolute;
+  bottom: -27.5%;
+  right: 7%;
+  height: 250px;
+  width: 270px;
+  background-size: cover;
+}
+
+/*スマホ・iPadAir対応 */
+@media screen and (max-width: 834px) {
+  #concept3 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .concept3-inner {
+    width: 100%;
+    height: 80%;
+  }
+
+  .concept3-header h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #5a5a5a;
+  }
+
+  .concept3-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .concept3-img {
+    height: 50%;
+    width: 100%;
+    background-position: center center;
+  }
+
+  .concept3-sentence {
+    width: 100%;
+  }
+
+  .concept3-sentence p {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #2a2a2a;
+  }
+
+  .concept3-sentence h3 {
+    display: none;
+  }
+
+  .concept3-sentence .concept_blue {
+    font-size: 1rem;
+    color: blue;
+  }
+
+  .concept3-rect-left-bottom {
+    display: none;
+  }
+
+  .concept3-rect-right-bottom {
+    display: none;
+  }
+}
+
+#concept4 {
+  height: auto;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.concept4-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.concept4-header {
+  text-align: center;
+}
+
+.concept4-header h2 {
+  font-family: "makinas";
+  font-size: 4.5rem;
+  color: #3a3a3a;
+  text-shadow: 4px 4px 8px #5a5a5a;
+}
+
+.concept4-content {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.concept4-container {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.concept4-container.img {
+  width: 450px;
+}
+
+.concept4-container.img-big {
+  width: 550px;
+}
+
+.concept4-container.sentence {
+  width: 350px;
+}
+
+.concept4-container.img::before {
+  content: "";
+  display: block;
+  padding-top: 72%;
+}
+
+.concept4-container.img-big::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+
+.concept4-container.sentence::before {
+  content: "";
+  display: block;
+  padding-top: 80%;
+}
+
+.concept4-rect-left-top {
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  height: 200px;
+  width: 150px;
+  background-size: cover;
+}
+
+.concept4-rect-right-bottom {
+  position: absolute;
+  bottom: 21%;
+  right: 0%;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+}
+
+/*スマホ・iPadAir対応 */
+@media screen and (max-width: 834px) {
+  .concept4-header h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #5a5a5a;
+  }
+
+  .concept4-rect-left-top {
+    display: none;
+  }
+
+  .concept4-rect-right-bottom {
+    display: none;
+  }
+}

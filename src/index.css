@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+
+/* 元のapp.cssを先にインポート（Tailwindより優先） */
+@import "./app.css";
+/* concept.cssをインポート */
+@import "./concept.css";
+/* bureau.cssをインポート */
+@import "./bureau.css";
+/* corporate.cssをインポート */
+@import "./corporate.css";
+/* contact.cssをインポート */
+@import "./contact.css";
+/* responsive.cssをインポート */
+@import "./responsive.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

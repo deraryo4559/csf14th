@@ -1,0 +1,245 @@
+body {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 834px) {
+  body {
+      padding-top: 0px;
+  }
+}
+
+
+#dp-frame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dp-top {
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rect-left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  aspect-ratio: 3 / 4;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+.dp-top-header {
+  width: auto;
+  aspect-ratio: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dp-top-title {
+  font-size: 6rem;
+  font-family: 'Makinas';
+}
+
+.dp-top-subtitle {
+  font-size: 2.5rem;
+  font-family: 'Makinas';
+}
+
+.rect-right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  aspect-ratio: 3 / 4;
+  background-size: contain;
+  transform: rotate(180deg);
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 834px) {
+  .dp-top {
+    height: 30vh;
+  }
+
+  .dp-top-title {
+    font-size: 4rem;
+    font-family: 'Makinas';
+  }
+  
+  .dp-top-subtitle {
+    font-size: 2rem;
+    font-family: 'Makinas';
+  }
+}
+
+/* 局別共通設定 */
+.dp-single {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+}
+
+.dp-single-top {
+  width: 85%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.dp-single-top-sentence {
+  width: 70%;
+  height: 100%;
+}
+
+.dp-single-header {
+  font-size: 5.5rem;
+  font-family: 'Makinas';
+}
+
+.dp-single-subtitle {
+  font-size: 2.5rem;
+  font-family: 'Makinas';
+}
+
+.dp-single-top-sentence p {
+  font-size: 1.5rem;
+  font-family: 'Makinas';
+  text-align: left;
+}
+
+.dp-single-top-rect-img {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.dp-single-bottom {
+  width: 85%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.dp-single-bottom-rect-img {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dp-single-bottom-rect-img2 {
+  width: 70%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 834px) {
+  .dp-single {
+    height: 175vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .dp-single-top {
+    flex-direction: column;
+  }
+  .dp-single-top {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dp-single-top-sentence {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .dp-single-header {
+    font-size: 3rem;
+  }
+  
+  .dp-single-subtitle {
+    font-size: 1rem;
+  }
+  
+  .dp-single-top-sentence p {
+    font-size: 1.2rem;
+        text-align: center;
+  }
+  
+  .dp-single-top-rect-img {
+    width: 300px;
+    background-position: center;
+  }
+  .dp-single-bottom {
+    flex-direction: column;
+  }
+  .dp-single-bottom-rect-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .dp-single-bottom-rect-img2 {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.dp-kouhou h2{
+  border-bottom: 0.8rem solid #FF2B6D;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.dp-sousei h2{
+  border-bottom: 0.8rem solid #12C2B0;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.dp-unei h2{
+  border-bottom: 0.8rem solid #0650FF;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.dp-syogai h2{
+  border-bottom: 0.8rem solid #FCDB01;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 834px) {
+  .dp-kouhou h2{
+    border-bottom: 0.4rem solid #FF2B6D;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .dp-sousei h2{
+    border-bottom: 0.4rem solid #12C2B0;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .dp-unei h2{
+    border-bottom: 0.4rem solid #0650FF;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .dp-syogai h2{
+    border-bottom: 0.4rem solid #FCDB01;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+}

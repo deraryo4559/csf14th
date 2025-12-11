@@ -17,7 +17,8 @@
           });
           var repoIndex = pathSegments.indexOf("csf14th");
           if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
-            redirectPath = "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
+            redirectPath =
+              "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
           }
         }
         window.location.replace(redirectPath);

@@ -9,11 +9,19 @@ import Corporate from "./pages/Corporate";
 
 const App = () => {
   // デバッグ用: baseパスを確認
-  console.log('BASE_URL:', import.meta.env.BASE_URL)
-  console.log('Current path:', window.location.pathname)
+  const baseUrl = import.meta.env.BASE_URL || '/csf14th/';
+  const currentPath = window.location.pathname;
   
+  console.log("BASE_URL:", baseUrl);
+  console.log("Current path:", currentPath);
+  
+  // basenameを動的に決定
+  // GitHub Pagesでは /csf14th/ がbaseパス
+  // 開発環境では / がbaseパス
+  const basename = baseUrl.replace(/\/$/, ''); // 末尾の / を削除
+
   return (
-    <Router basename="/csf14th">
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

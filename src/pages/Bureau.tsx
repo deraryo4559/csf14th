@@ -1,3 +1,5 @@
+import { getAssetPath } from "../utils/assetPath";
+
 const Bureau = () => {
   return (
     <main>
@@ -6,13 +8,13 @@ const Bureau = () => {
         id="dp-frame"
         className="dp-top"
         style={{
-          backgroundImage: "url('/assets/img/department/top-bg.png')",
+          backgroundImage: `url('${getAssetPath("/assets/img/department/top-bg.png")}')`,
         }}
       >
         <div
           className="rect-left-top"
           style={{
-            backgroundImage: "url('/assets/img/department/top.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/department/top.png")}')`,
           }}
         />
         <div className="dp-top-header">
@@ -22,7 +24,7 @@ const Bureau = () => {
         <div
           className="rect-right-bottom"
           style={{
-            backgroundImage: "url('/assets/img/department/top.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/department/top.png")}')`,
           }}
         />
       </section>
@@ -50,7 +52,7 @@ const Bureau = () => {
           <div
             className="dp-single-top-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/kouhou1.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/kouhou1.png")}')`,
             }}
           />
         </div>
@@ -58,13 +60,13 @@ const Bureau = () => {
           <div
             className="dp-single-bottom-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/kouhou2.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/kouhou2.png")}')`,
             }}
           />
           <div
             className="dp-single-bottom-rect-img2"
             style={{
-              backgroundImage: "url('/assets/img/department/kouhou3.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/kouhou3.png")}')`,
             }}
           />
         </div>
@@ -91,7 +93,7 @@ const Bureau = () => {
           <div
             className="dp-single-top-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/sousei1.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/sousei1.png")}')`,
             }}
           />
         </div>
@@ -99,13 +101,13 @@ const Bureau = () => {
           <div
             className="dp-single-bottom-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/sousei2.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/sousei2.png")}')`,
             }}
           />
           <div
             className="dp-single-bottom-rect-img2"
             style={{
-              backgroundImage: "url('/assets/img/department/sousei3.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/sousei3.png")}')`,
             }}
           />
         </div>
@@ -134,7 +136,7 @@ const Bureau = () => {
           <div
             className="dp-single-top-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/unei1.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/unei1.png")}')`,
             }}
           />
         </div>
@@ -142,13 +144,13 @@ const Bureau = () => {
           <div
             className="dp-single-bottom-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/unei2.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/unei2.png")}')`,
             }}
           />
           <div
             className="dp-single-bottom-rect-img2"
             style={{
-              backgroundImage: "url('/assets/img/department/unei3.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/unei3.png")}')`,
             }}
           />
         </div>
@@ -177,7 +179,7 @@ const Bureau = () => {
           <div
             className="dp-single-top-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/syogai1.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/syogai1.png")}')`,
             }}
           />
         </div>
@@ -185,13 +187,13 @@ const Bureau = () => {
           <div
             className="dp-single-bottom-rect-img"
             style={{
-              backgroundImage: "url('/assets/img/department/syogai2.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/syogai2.png")}')`,
             }}
           />
           <div
             className="dp-single-bottom-rect-img2"
             style={{
-              backgroundImage: "url('/assets/img/department/syogai3.png')",
+              backgroundImage: `url('${getAssetPath("/assets/img/department/syogai3.png")}')`,
             }}
           />
         </div>

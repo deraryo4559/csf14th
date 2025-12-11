@@ -1,3 +1,5 @@
+import { getAssetPath } from "../utils/assetPath";
+
 const Concept = () => {
   return (
     <main>
@@ -29,19 +31,19 @@ const Concept = () => {
         <div
           className="concept1-rect-left-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/family.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/family.png")}')`,
           }}
         />
         <div
           className="concept1-rect-right-top"
           style={{
-            backgroundImage: "url('/assets/img/concept/hatena3.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/hatena3.png")}')`,
           }}
         />
         <div
           className="concept1-rect-right-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/triangle2.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/triangle2.png")}')`,
           }}
         />
       </section>
@@ -51,7 +53,7 @@ const Concept = () => {
         <div
           className="concept2-inner"
           style={{
-            backgroundImage: "url('/assets/img/concept/concept3.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/concept3.png")}')`,
           }}
         >
           <div className="concept2-header">
@@ -84,13 +86,13 @@ const Concept = () => {
         <div
           className="concept2-rect-left-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/hatena3.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/hatena3.png")}')`,
           }}
         />
         <div
           className="concept2-rect-right-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/grandpa2.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/grandpa2.png")}')`,
           }}
         />
       </section>
@@ -105,7 +107,7 @@ const Concept = () => {
             <div
               className="concept3-img"
               style={{
-                backgroundImage: "url('/assets/img/concept/ozeki.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/ozeki.png")}')`,
               }}
             />
             <div className="concept3-sentence">
@@ -148,13 +150,13 @@ const Concept = () => {
         <div
           className="concept3-rect-left-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/square3.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/square3.png")}')`,
           }}
         />
         <div
           className="concept3-rect-right-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/gold.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/gold.png")}')`,
           }}
         />
       </section>
@@ -169,55 +171,55 @@ const Concept = () => {
             <div
               className="concept4-container img"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_1.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_1.png")}')`,
               }}
             />
             <div
               className="concept4-container sentence"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_2.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_2.png")}')`,
               }}
             />
             <div
               className="concept4-container img"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_3.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_3.png")}')`,
               }}
             />
             <div
               className="concept4-container sentence"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_4.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_4.png")}')`,
               }}
             />
             <div
               className="concept4-container img-big"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_5.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_5.png")}')`,
               }}
             />
             <div
               className="concept4-container sentence"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_6.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_6.png")}')`,
               }}
             />
             <div
               className="concept4-container img"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_7.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_7.png")}')`,
               }}
             />
             <div
               className="concept4-container sentence"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_8_2.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_8_2.png")}')`,
               }}
             />
             <div
               className="concept4-container img"
               style={{
-                backgroundImage: "url('/assets/img/concept/concept4_9.png')",
+                backgroundImage: `url('${getAssetPath("/assets/img/concept/concept4_9.png")}')`,
               }}
             />
           </div>
@@ -225,13 +227,13 @@ const Concept = () => {
         <div
           className="concept4-rect-left-top"
           style={{
-            backgroundImage: "url('/assets/img/concept/ghost2.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/ghost2.png")}')`,
           }}
         />
         <div
           className="concept4-rect-right-bottom"
           style={{
-            backgroundImage: "url('/assets/img/concept/dress.png')",
+            backgroundImage: `url('${getAssetPath("/assets/img/concept/dress.png")}')`,
           }}
         />
       </section>

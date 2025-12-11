@@ -1,0 +1,12 @@
+# すべてのテキストファイルに対して自動変換を無効化
+* text=auto
+
+# 特定のファイルに対してLFを使用
+*.sh text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# 特定のファイルに対してCRLFを使用
+*.bat text eol=crlf
+*.cmd text eol=crlf

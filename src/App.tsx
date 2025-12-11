@@ -8,6 +8,10 @@ import Contact from "./pages/Contact";
 import Corporate from "./pages/Corporate";
 
 const App = () => {
+  // デバッグ用: baseパスを確認
+  console.log('BASE_URL:', import.meta.env.BASE_URL)
+  console.log('Current path:', window.location.pathname)
+  
   return (
     <Router basename="/csf14th">
       <Routes>

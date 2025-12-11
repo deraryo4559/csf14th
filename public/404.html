@@ -3,35 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSF 14th</title>
+    <title>CSF 14th - Redirecting...</title>
     <script>
       // GitHub Pages用のSPAリダイレクト
-      var path = window.location.pathname;
-      var pathSegments = path.split("/").filter(function (segment) {
-        return segment !== "";
-      });
-
-      // /csf14th/ の後のパスを取得
-      var repoIndex = pathSegments.indexOf("csf14th");
-      if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
-        var redirectPath =
-          "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
-        window.location.replace(redirectPath);
-      } else if (repoIndex === -1 || pathSegments.length === repoIndex + 1) {
-        // ルートパスの場合
-        window.location.replace("/csf14th/");
-      }
+      (function() {
+        var path = window.location.pathname;
+        
+        // /csf14th/ で始まっていない場合はリダイレクト
+        if (!path.startsWith('/csf14th/')) {
+          if (path === '/' || path === '/csf14th' || path === '/csf14th/') {
+            window.location.replace('/csf14th/');
+          } else {
+            // パスセグメントを取得
+            var pathSegments = path.split("/").filter(function (segment) {
+              return segment !== "";
+            });
+            
+            var repoIndex = pathSegments.indexOf("csf14th");
+            if (repoIndex !== -1 && pathSegments.length > repoIndex + 1) {
+              var redirectPath = "/csf14th/" + pathSegments.slice(repoIndex + 1).join("/");
+              window.location.replace(redirectPath);
+            } else {
+              window.location.replace("/csf14th/");
+            }
+          }
+        } else {
+          // 既に /csf14th/ で始まっている場合は index.html を読み込む
+          window.location.replace('/csf14th/index.html');
+        }
+      })();
     </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script>
-      // フォールバック: リダイレクトが失敗した場合
-      setTimeout(function () {
-        if (window.location.pathname !== "/csf14th/") {
-          window.location.replace("/csf14th/");
-        }
-      }, 100);
-    </script>
+    <div style="padding: 20px; font-family: sans-serif;">
+      <h1>リダイレクト中...</h1>
+      <p>ページを読み込んでいます...</p>
+    </div>
   </body>
 </html>

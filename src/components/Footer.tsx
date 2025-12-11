@@ -5,7 +5,9 @@ const Footer = () => {
     <footer
       className="footer"
       style={{
-        backgroundImage: `url('${getAssetPath("/assets/img/common/footer3.png")}')`,
+        backgroundImage: `url('${getAssetPath(
+          "/assets/img/common/footer3.png"
+        )}')`,
       }}
     >
       <div className="footer_inner">
@@ -14,7 +16,9 @@ const Footer = () => {
             <div
               className="footer-logo-image"
               style={{
-                backgroundImage: `url('${getAssetPath("/assets/img/common/csf_logo2.png")}')`,
+                backgroundImage: `url('${getAssetPath(
+                  "/assets/img/common/csf_logo2.png"
+                )}')`,
               }}
             />
             <div className="footer-logo-name">

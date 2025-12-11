@@ -51,7 +51,9 @@ const Header = () => {
         <div
           className="logo-img"
           style={{
-            backgroundImage: `url('${getAssetPath("/assets/img/common/CSF_Logo_header4.png")}')`,
+            backgroundImage: `url('${getAssetPath(
+              "/assets/img/common/CSF_Logo_header4.png"
+            )}')`,
           }}
         />
         <h2 className="logo-title">学生団体廃校文化祭実行委員会</h2>
@@ -59,7 +61,9 @@ const Header = () => {
 
       <div className="header_nav">
         <div
-          className={`header_menu js-menu-icon ${isMenuOpen ? "is-active" : ""}`}
+          className={`header_menu js-menu-icon ${
+            isMenuOpen ? "is-active" : ""
+          }`}
           onClick={toggleMenu}
         >
           <span />
